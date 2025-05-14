@@ -1,0 +1,15 @@
+# Librerías necesarias
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+# Seaborn para visualizaciones más estilizadas
+import seaborn as sns
+import os
+from analisis import DataAnalyzer
+
+df = pd.read_csv("adult.csv")
+
+analizar = DataAnalyzer(df)
+analizar.summary()
+analizar.correlation_matrix()
+analizar.categorical_analisis()
